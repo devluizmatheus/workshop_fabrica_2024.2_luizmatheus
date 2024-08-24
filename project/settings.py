@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pontos_turisticos',
     'rest_framework',
-    'registr_pontos_turisticos',
+    'registro_pontos_turisticos',
     
 ]
 
@@ -77,10 +77,20 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'database_pontos_turisticos',
+        'USER': 'matheus_admin',
+        'PASSWORD': 'matheus123123@',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
