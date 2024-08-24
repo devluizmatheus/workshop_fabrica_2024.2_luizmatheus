@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'pontos_turisticos',
     'rest_framework',
     'registr_pontos_turisticos',
-    'pontos_turisticos'
+    
 ]
 
 MIDDLEWARE = [
