@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+'''Criando as Models para a API e DATABASE'''
 class RegistrandoPontosTuristicos(models.Model):
     nome = models.CharField('Nome', max_length=255)
     localizacao = models.CharField('Localização', max_length=255)
